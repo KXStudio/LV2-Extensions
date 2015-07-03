@@ -1,0 +1,18 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://kxstudio.sf.net>
+    a owl:Ontology ;
+    doap:license "Public Domain" ;
+    doap:name "KXStudio Meta" ;
+    doap:shortdesc "KXStudio project metadata" ;
+    doap:created "2015-07-03" ;
+    doap:maintainer <http://falktx.com/myself.html> ;
+    rdfs:comment "This document describes metadata relevant to the KXStudio project." .
+
+<http://falktx.com/myself.html>
+    a foaf:Person ;
+    foaf:name "Filipe Coelho" ;
+    foaf:mbox <mailto:falktx@falktx.com> .
