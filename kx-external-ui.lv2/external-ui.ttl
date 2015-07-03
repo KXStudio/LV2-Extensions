@@ -38,7 +38,7 @@
 </ul>
 
 <p>
-    List of hosts that use this extension:
+    List of hosts that support this extension:
 </p>
 <ul>
     <li><a href="http://ardour.org" target="_blank">Ardour</a></li>

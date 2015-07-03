@@ -21,5 +21,9 @@ if [ ! -f documentation/style.css ]; then
 fi
 
 cp kx-external-ui.lv2/* documentation/extui/
+cp kx-programs.lv2/*    documentation/progs/
+cp kx-rtmempool.lv2/*   documentation/rtmpl/
 
 lv2specgen.py $(pwd)/kx-external-ui.lv2/manifest.ttl /usr/share/lv2specgen/ ../style.css $(pwd)/documentation/extui/index.html $(pwd)/documentation/extui "" -i -p extui
+lv2specgen.py $(pwd)/kx-programs.lv2/manifest.ttl    /usr/share/lv2specgen/ ../style.css $(pwd)/documentation/progs/index.html $(pwd)/documentation/progs "" -i -p progs
+lv2specgen.py $(pwd)/kx-rtmempool.lv2/manifest.ttl   /usr/share/lv2specgen/ ../style.css $(pwd)/documentation/rtmpl/index.html $(pwd)/documentation/rtmpl "" -i -p rtmpl

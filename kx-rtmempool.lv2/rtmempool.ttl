@@ -1,0 +1,33 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rtmpl: <http://kxstudio.sf.net/ns/lv2ext/rtmempool#> .
+@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kxstudio.sf.net/ns/lv2ext/rtmempool>
+    a owl:Ontology ;
+    rdfs:seeAlso <rtmempool.h> ,
+        <rtmempool.doap.ttl> ,
+        <../kx-meta/meta.ttl> ;
+    lv2:documentation """
+<p>
+    LV2 realtime safe memory pool extension definition.
+</p>
+
+<p>
+    List of hosts that support this extension:
+</p>
+<ul>
+    <li><a href="http://kxstudio.sf.net/Applications:Carla" target="_blank">Carla</a></li>
+</ul>
+""" .
+
+rtmpl:Pool
+    a lv2:Feature ;
+    lv2:documentation """
+<p>
+TODO
+</p>
+""" .
