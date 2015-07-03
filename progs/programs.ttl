@@ -1,0 +1,62 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix progs: <http://kxstudio.sf.net/ns/lv2ext/programs#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kxstudio.sf.net/ns/lv2ext/programs>
+    a owl:Ontology ;
+    rdfs:seeAlso <programs.h> ,
+        <programs.doap.ttl> ,
+        <../kx-meta/meta.ttl> ;
+    lv2:documentation """
+<p>
+    LV2 Programs is an <a href="http://lv2plug.in/ns/lv2core#Specification" target="_blank">LV2 Extension</a> that allows a host to access plugin-side midi-mapped programs.<br/>
+    It is not the same as <a href="http://lv2plug.in/ns/ext/presets" target="_blank">LV2 Presets</a>,
+    which defines host-side presets where the plugin has no control or role whatsoever.<br/>
+</p>
+
+<p>
+    List of plugins that use this extension:
+</p>
+<ul>
+    <li><a href="http://distrho.sourceforge.net" target="_blank">DISTRHO Plugins and Ports</a></li>
+    <li><a href="http://drobilla.net/software/mda-lv2/" target="_blank">mda-lv2</a> (using <a href="mda-lv2_programs.patch" target="_blank">this patch</a>)</li>
+</ul>
+
+<p>
+    List of hosts that support this extension:
+</p>
+<ul>
+    <li><a href="http://kxstudio.sf.net/Applications:Carla" target="_blank">Carla</a></li>
+    <li><a href="http://qtractor.sourceforge.net" target="_blank">Qtractor</a></li>
+</ul>
+""" .
+
+progs:Host
+    a lv2:Feature ;
+    lv2:documentation """
+<p>
+TODO
+</p>
+""" .
+
+progs:Interface
+    a lv2:ExtensionData ;
+    rdfs:label "Programs Plugin Interface" ;
+    lv2:documentation """
+<p>
+TODO
+</p>
+""" .
+
+progs:UIInterface
+    a lv2:ExtensionData ;
+    rdfs:label "Programs UI Interface" ;
+    lv2:documentation """
+<p>
+TODO
+</p>
+""" .

@@ -1,0 +1,81 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix extui: <http://kxstudio.sf.net/ns/lv2ext/external-ui#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kxstudio.sf.net/ns/lv2ext/external-ui>
+    a owl:Ontology ;
+    rdfs:seeAlso <external-ui.h> ,
+        <external-ui.doap.ttl> ,
+        <../kx-meta/meta.ttl> ;
+    lv2:documentation """
+<p>
+    LV2 External UI extension is an <a href="http://lv2plug.in/ns/extensions/ui" target="_blank">LV2 UI</a> extension, subclass of ui:UI just like ui:GtkUI is.<br/>
+    The ui:Widget type used in this extension is extui:Widget, see the C header file for more details.<br/>
+</p>
+<p>
+    This extension used to be (wronly) defined in a <a href="http://lv2plug.in/ns/extensions/ui#external">lv2plug.in domain</a>.<br/>
+    The old URI is deprecated and the extension is available under the new <a href="http://kxstudio.sf.net/ns/lv2ext/external-ui">URI</a>.<br/>
+    Or if you prefer, the old extension is deprecated and a new one with exactly same semantics but different URI is available.
+</p>
+
+<p>
+    List of plugins that use this extension:
+</p>
+<ul>
+    <li><a href="http://distrho.sourceforge.net/" target="_blank">DISTRHO Plugins and Ports</a></li>
+    <li><a href="http://www.drumgizmo.org/" target="_blank">DrumGizmo</a></li>
+    <li><a href="http://drumkv1.sourceforge.net/" target="_blank">drumkv1</a></li>
+    <li><a href="https://github.com/x42/meters.lv2" target="_blank">meters.lv2</a></li>
+    <li><a href="https://www.pianoteq.com/pianoteq4" target="_blank">Pianoteq</a></li>
+    <li><a href="http://samplv1.sourceforge.net/" target="_blank">samplv1</a></li>
+    <li><a href="https://github.com/x42/sisco.lv2" target="_blank">sisco.lv2</a></li>
+    <li><a href="http://synthv1.sourceforge.net/" target="_blank">synthv1</a></li>
+    <li><a href="https://github.com/x42/tuna.lv2" target="_blank">tuna.lv2</a></li>
+</ul>
+
+<p>
+    List of hosts that support this extension:
+</p>
+<ul>
+    <li><a href="http://ardour.org" target="_blank">Ardour</a></li>
+    <li><a href="http://kxstudio.sf.net/Applications:Carla" target="_blank">Carla</a></li>
+    <li><a href="http://drobilla.net/software/jalv/" target="_blank">Jalv</a> (using <a href="jalv_extui_svn5273b.diff" target="_blank">this patch</a>)</li>
+    <li><a href="http://qtractor.sourceforge.net" target="_blank">Qtractor</a></li>
+</ul>
+""" .
+
+extui:Host
+    a lv2:Feature ;
+    lv2:documentation """
+<p>
+TODO
+</p>
+""" .
+
+extui:Widget
+    a rdfs:Class ,
+        owl:Class ;
+    rdfs:subClassOf ui:UI ;
+    rdfs:label "External UI" ;
+    lv2:documentation """
+<p>
+TODO
+</p>
+""" .
+
+<http://lv2plug.in/ns/extensions/ui#external>
+    a lv2:Feature ,
+        rdfs:Class ,
+        owl:Class ;
+    owl:deprecated true ;
+    rdfs:seeAlso extui:Host, extui:Widget ;
+    rdfs:label "Old External UI" ;
+    lv2:documentation """
+<p>
+TODO
+</p>
+""" .

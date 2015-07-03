@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html about="http://kxstudio.sf.net/ns/lv2ext/external-ui"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dct="http://purl.org/dc/terms/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:lv2="http://lv2plug.in/ns/lv2core#"
+            xmlns:extui="http://kxstudio.sf.net/ns/lv2ext/external-ui#"
+      xml:lang="en">
+  <head>
+    <title>External UI</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <meta name="generator" content="lv2specgen" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+  <!-- HEADER -->
+  <div id="topbar">
+    <div id="header">
+      <div id="titlebox">
+        <h1 id="title">External UI</h1>
+        <div id="subtitle"><a href="http://kxstudio.sf.net/ns/lv2ext/external-ui">http://kxstudio.sf.net/ns/lv2ext/external-ui</a></div>
+        <div id="shortdesc">LV2 extension for implementing external UIs.</div>
+      </div>
+      <table id="meta">
+        <!--<tr><th>URI</th><td><a href="http://kxstudio.sf.net/ns/lv2ext/external-ui">http://kxstudio.sf.net/ns/lv2ext/external-ui</a></td></tr>
+            <tr><th>Version</th><td>@REVISION@</td></tr>-->
+        <!--<tr><th>Prefixes</th><td><span><a href="http://ontologi.es/doap-changeset#">dcs</a> <a href="http://usefulinc.com/ns/doap#">doap</a> <a href="http://kxstudio.sf.net/ns/lv2ext/external-ui#">extui</a> <a href="http://xmlns.com/foaf/0.1/">foaf</a> <a href="http://lv2plug.in/ns/lv2core#">lv2</a> <a href="http://www.w3.org/2002/07/owl#">owl</a> <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">rdf</a> <a href="http://www.w3.org/2000/01/rdf-schema#">rdfs</a> <a href="http://lv2plug.in/ns/extensions/ui#">ui</a> <a href="http://www.w3.org/2001/XMLSchema#">xsd</a> </span></td></tr>-->
+        <tr><th>Version</th><td>1.0</td></tr>
+        <tr><th>Date</th><td>2015-07-03</td></tr>
+        <tr><th>Discuss</th><td><a href="mailto:None">None</a> <a href="None">(subscribe)</a></td></tr>
+        <tr><th class="metahead">Developer</th><td><span class="author" property="doap:developer">Filipe Coelho</span></td></tr><tr><th class="metahead">Maintainer</th><td><span class="author" property="doap:maintainer">Filipe Coelho</span></td></tr>
+      </table>
+    </div>
+    <ul id="contents">
+      <!-- <li><a href="#sec-description">Description</a></li> -->
+      <li><a href="#sec-index">Index</a></li>
+      <li><a href="#sec-reference">Reference</a></li>
+      <li><a href="#sec-history">History</a></li>
+      <li><a href="/home/falktx/FOSS/GIT-mine/KXStudio/LV2-Extensions/documentation/extui/group__manifest.html">API</a></li>
+    </ul>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <!--<h2 class="sec" id="sec-description">Description</h2>-->
+  <div class="content">
+<p>
+    LV2 External UI extension is an <a href="http://lv2plug.in/ns/extensions/ui" target="_blank">LV2 UI</a> extension, subclass of <a href="http://lv2plug.in/ns/extensions/ui#UI">ui:UI</a> just like <a href="http://lv2plug.in/ns/extensions/ui#GtkUI">ui:GtkUI</a> is.<br/>
+    The <a href="http://lv2plug.in/ns/extensions/ui#Widget">ui:Widget</a> type used in this extension is <a href="#Widget">extui:Widget</a>, see the C header file for more details.<br/>
+</p>
+<p>
+    This extension used to be (wronly) defined in a <a href="http://lv2plug.in/ns/extensions/ui#external">lv2plug.in domain</a>.<br/>
+    The old URI is deprecated and the extension is available under the new <a href="http://kxstudio.sf.net/ns/lv2ext/external-ui">URI</a>.<br/>
+    Or if you prefer, the old extension is deprecated and a new one with exactly same semantics but different URI is available.
+</p>
+
+<p>
+    List of plugins that use this extension:
+</p>
+<ul>
+    <li><a href="http://distrho.sourceforge.net/" target="_blank">DISTRHO Plugins and Ports</a></li>
+    <li><a href="http://www.drumgizmo.org/" target="_blank">DrumGizmo</a></li>
+    <li><a href="http://drumkv1.sourceforge.net/" target="_blank">drumkv1</a></li>
+    <li><a href="https://github.com/x42/meters.lv2" target="_blank">meters.lv2</a></li>
+    <li><a href="https://www.pianoteq.com/pianoteq4" target="_blank">Pianoteq</a></li>
+    <li><a href="http://samplv1.sourceforge.net/" target="_blank">samplv1</a></li>
+    <li><a href="https://github.com/x42/sisco.lv2" target="_blank">sisco.lv2</a></li>
+    <li><a href="http://synthv1.sourceforge.net/" target="_blank">synthv1</a></li>
+    <li><a href="https://github.com/x42/tuna.lv2" target="_blank">tuna.lv2</a></li>
+</ul>
+
+<p>
+    List of hosts that support this extension:
+</p>
+<ul>
+    <li><a href="http://ardour.org" target="_blank">Ardour</a></li>
+    <li><a href="http://kxstudio.sf.net/Applications:Carla" target="_blank">Carla</a></li>
+    <li><a href="http://drobilla.net/software/jalv/" target="_blank">Jalv</a> (using <a href="jalv_extui_svn5273b.diff" target="_blank">this patch</a>)</li>
+    <li><a href="http://qtractor.sourceforge.net" target="_blank">Qtractor</a></li>
+</ul>
+</div>
+
+  <!-- INDEX -->
+  <h2 class="sec" id="sec-index">Index</h2>
+  <div class="content" id="index">
+  <table class="index"><thead><tr><th>Classes</th><th>Instances</th><th>Files</th></tr></thead>
+<tbody><tr><td><ul><li><a href="#Widget">Widget</a></li></ul></td>
+<td><ul><li><a href="#Host">Host</a></li></ul></td>
+<td><ul><li><a href="external-ui.doap.ttl">external-ui.doap.ttl</a></li><li><a href="external-ui.h">external-ui.h</a></li><li><a href="external-ui.ttl">external-ui.ttl</a></li></ul></td>
+</tr></tbody></table>
+  </div>
+
+  <!-- DOCUMENTATION -->
+  <h2 class="sec" id="sec-reference">Reference</h2>
+  <div class="content">
+  <div class="specterm" id="Widget" about="http://kxstudio.sf.net/ns/lv2ext/external-ui#Widget">
+<h3>Class <a href="#Widget">extui:Widget</a></h3>
+<div class="spectermbody"><div class="description"><div property="rdfs:label" class="label">External UI</div><div property="rdfs:comment">
+<p>
+TODO
+</p>
+</div></div>
+<table class="terminfo">
+<tr><th>Sub-class of</th><td><a href="http://lv2plug.in/ns/extensions/ui#UI" >ui:UI</a></td></tr>
+</table>
+</div>
+</div>
+
+<div class="specterm" id="Host" about="http://kxstudio.sf.net/ns/lv2ext/external-ui#Host">
+<h3>Instance <a href="#Host">extui:Host</a></h3>
+<div class="spectermbody"><div class="description"><div property="rdfs:comment">
+<p>
+TODO
+</p>
+</div></div>
+<table class="terminfo"><tr><th>Type</th><td><a href="http://lv2plug.in/ns/lv2core#Feature" about="http://kxstudio.sf.net/ns/lv2ext/external-ui#Host" rel="rdf:type" resource="http://lv2plug.in/ns/lv2core#Feature">lv2:Feature</a></td></tr>
+</table>
+</div>
+</div>
+
+
+  </div>
+
+  <!-- HISTORY -->
+  <h2 class="sec" id="sec-history">History</h2>
+  <div class="content">
+  <dl>
+<dt><a href="http://kxstudio.sf.net/ns/lv2ext/kx-extensions-1.0.tar.bz2">Version 1.0</a> (2015-07-03)</dt>
+<dd><ul>
+<li>First stable release.</li>
+</ul></dd></dl>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <div>
+      This document is available under the
+      <a about="" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+        Creative Commons Attribution-ShareAlike License
+      </a>
+    </div>
+	<div>
+      Valid
+      <a about="" rel="dct:conformsTo" resource="http://www.w3.org/TR/rdfa-syntax"
+         href="http://validator.w3.org/check?uri=referer">
+        XHTML+RDFa
+      </a>
+      and
+      <a about="" rel="dct:conformsTo" resource="http://www.w3.org/TR/CSS2"
+         href="http://jigsaw.w3.org/css-validator/check/referer">
+        CSS
+      </a>
+      generated from manifest.ttl by <a href="http://drobilla.net/software/lv2specgen">lv2specgen</a>
+    </div>
+  </div>
+
+  </body>
+</html>
