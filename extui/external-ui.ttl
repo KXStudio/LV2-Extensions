@@ -18,7 +18,7 @@
 </p>
 <p>
     This extension used to be (wronly) defined in a <a href="http://lv2plug.in/ns/extensions/ui#external">lv2plug.in domain</a>.<br/>
-    The old URI is deprecated and the extension is available under the new <a href="http://kxstudio.sf.net/ns/lv2ext/external-ui">URI</a>.<br/>
+    The old URI is deprecated and the extension is available under a <a href="http://kxstudio.sf.net/ns/lv2ext/external-ui">new URI</a>.<br/>
     Or if you prefer, the old extension is deprecated and a new one with exactly same semantics but different URI is available.
 </p>
 
