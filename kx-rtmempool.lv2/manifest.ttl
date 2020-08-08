@@ -3,6 +3,6 @@
 
 <http://kxstudio.sf.net/ns/lv2ext/rtmempool>
     a lv2:Specification ;
-    lv2:minorVersion 1 ;
+    lv2:minorVersion 2 ;
     lv2:microVersion 0 ;
     rdfs:seeAlso <rtmempool.ttl> .
