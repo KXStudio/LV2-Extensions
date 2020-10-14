@@ -36,6 +36,16 @@ extern "C" {
 #include <stdbool.h>
 #endif
 
+/** A status code for LV2_CONTROL_INPUT_PORT_CHANGE_REQUEST_URI functions. */
+typedef enum {
+	LV2_CONTROL_INPUT_PORT_CHANGE_SUCCESS           = 0,  /**< Completed successfully. */
+	LV2_CONTROL_INPUT_PORT_CHANGE_ERR_UNKNOWN       = 1,  /**< Unknown error. */
+	LV2_CONTROL_INPUT_PORT_CHANGE_ERR_INVALID_INDEX = 2   /**< Failed due to invalid port index. */
+} LV2_ControlInputPort_Change_Status;
+
+/**
+ *  Opaque handle for LV2_CONTROL_INPUT_PORT_CHANGE_REQUEST_URI feature.
+ */
 typedef void* LV2_ControlInputPort_Change_Request_Handle;
 
 /**
@@ -61,9 +71,9 @@ typedef struct _LV2_ControlInputPort_Change_Request {
      *
      * The plugin MUST call this function during run().
      */
-    bool (*request_change)(LV2_ControlPortChangeRequest_Handle handle,
-                           uint32_t index,
-                           float value);
+    LV2_ControlInputPort_Change_Status (*request_change)(LV2_ControlPortChangeRequest_Handle handle,
+                                                         uint32_t index,
+                                                         float value);
 
 } LV2_ControlInputPort_Change_Request;
 
