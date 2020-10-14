@@ -71,7 +71,7 @@ typedef struct _LV2_ControlInputPort_Change_Request {
      *
      * The plugin MUST call this function during run().
      */
-    LV2_ControlInputPort_Change_Status (*request_change)(LV2_ControlPortChangeRequest_Handle handle,
+    LV2_ControlInputPort_Change_Status (*request_change)(LV2_ControlInputPort_Change_Request_Handle handle,
                                                          uint32_t index,
                                                          float value);
 
