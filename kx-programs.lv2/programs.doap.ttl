@@ -11,8 +11,8 @@
     doap:homepage <http://kxstudio.sf.net/ns/lv2ext/programs> ;
     doap:created "2015-07-03" ;
     doap:shortdesc "LV2 extension for implementing plugin-side programs." ;
-    doap:developer <http://falktx.com/myself.html> ;
-    doap:maintainer <http://falktx.com/myself.html> ;
+    doap:developer <https://falktx.com> ;
+    doap:maintainer <https://falktx.com> ;
     doap:release [
         doap:revision "1.0" ;
         doap:created "2015-07-03" ;

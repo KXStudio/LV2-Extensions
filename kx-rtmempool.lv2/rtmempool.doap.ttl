@@ -11,8 +11,8 @@
     doap:homepage <http://kxstudio.sf.net/ns/lv2ext/rtmempool> ;
     doap:created "2015-07-03" ;
     doap:shortdesc "LV2 extension that provides a realtime safe memory pool for plugins." ;
-    doap:developer <http://falktx.com/myself.html> ;
-    doap:maintainer <http://falktx.com/myself.html> ;
+    doap:developer <https://falktx.com> ;
+    doap:maintainer <https://falktx.com> ;
     doap:release [
         doap:revision "2.0" ;
         doap:created "2020-08-08" ;

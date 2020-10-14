@@ -9,10 +9,10 @@
     doap:name "KXStudio Meta" ;
     doap:shortdesc "KXStudio project metadata" ;
     doap:created "2015-07-03" ;
-    doap:maintainer <http://falktx.com/myself.html> ;
+    doap:maintainer <https://falktx.com> ;
     rdfs:comment "This document describes metadata relevant to the KXStudio project." .
 
-<http://falktx.com/myself.html>
+<https://falktx.com>
     a foaf:Person ;
     foaf:name "Filipe Coelho" ;
     foaf:mbox <mailto:falktx@falktx.com> .
