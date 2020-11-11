@@ -66,7 +66,7 @@ typedef struct _LV2_ControlInputPort_Change_Request {
      * Parameter index is port index to change.
      * Parameter value is the requested value to change the control port input to.
      *
-     * Returns true if the operation succeeded.
+     * Returns status of the request.
      * The host may decline this request, if e.g. it is currently automating this port.
      *
      * The plugin MUST call this function during run().
