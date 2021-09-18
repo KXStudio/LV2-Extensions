@@ -11,12 +11,21 @@
     doap:homepage <http://kxstudio.sf.net/ns/lv2ext/rtmempool> ;
     doap:created "2015-07-03" ;
     doap:shortdesc "LV2 extension that provides a realtime safe memory pool for plugins." ;
-    doap:developer <http://falktx.com/myself.html> ;
-    doap:maintainer <http://falktx.com/myself.html> ;
+    doap:developer <https://falktx.com/> ;
+    doap:maintainer <https://falktx.com/> ;
     doap:release [
+        doap:revision "2.0" ;
+        doap:created "2020-08-08" ;
+        doap:file-release <https://github.com/KXStudio/LV2-Extensions/archive/2020-08-08.tar.gz> ;
+        dcs:changeset [
+            dcs:item [
+                rdfs:label "Relicense as ISC."
+            ]
+        ]
+    ] , [
         doap:revision "1.0" ;
         doap:created "2015-07-03" ;
-        doap:file-release <http://kxstudio.sf.net/ns/lv2ext/kx-extensions-1.0.tar.bz2> ;
+        doap:file-release <https://github.com/KXStudio/LV2-Extensions/archive/2020-07-14.tar.gz> ;
         dcs:changeset [
             dcs:item [
                 rdfs:label "First stable release."

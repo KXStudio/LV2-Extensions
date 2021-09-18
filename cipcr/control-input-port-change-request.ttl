@@ -1,0 +1,15 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://kx.studio/ns/lv2ext/control-input-port-change-request>
+    a owl:Ontology ,
+        lv2:Feature ;
+    rdfs:seeAlso <control-port-change-request.h> ,
+        <control-input-port-change-request.doap.ttl> ,
+        <../kx-meta/meta.ttl> ;
+    lv2:documentation """
+<p>
+    LV2 Control Input Port Change Request is an <a href="http://lv2plug.in/ns/lv2core#Specification" target="_blank">LV2 Extension</a> for allowing plugins to request changes on their own control input ports.
+</p>
+""" .
