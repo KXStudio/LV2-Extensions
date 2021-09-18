@@ -6,7 +6,7 @@
     a owl:Ontology ,
         lv2:Feature ;
     rdfs:seeAlso <control-port-change-request.h> ,
-        <control-port-change-request.doap.ttl> ,
+        <control-input-port-change-request.doap.ttl> ,
         <../kx-meta/meta.ttl> ;
     lv2:documentation """
 <p>
