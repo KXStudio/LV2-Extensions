@@ -11,8 +11,8 @@
     doap:homepage <http://kxstudio.sf.net/ns/lv2ext/external-ui> ;
     doap:created "2015-07-03" ;
     doap:shortdesc "LV2 extension for implementing external UIs." ;
-    doap:developer <https://falktx.com> ;
-    doap:maintainer <https://falktx.com> ;
+    doap:developer <https://falktx.com/> ;
+    doap:maintainer <https://falktx.com/> ;
     doap:release [
         doap:revision "2.0" ;
         doap:created "2020-08-08" ;
