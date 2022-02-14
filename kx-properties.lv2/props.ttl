@@ -1,0 +1,29 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix props: <http://kxstudio.sf.net/ns/lv2ext/props#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kxstudio.sf.net/ns/lv2ext/props>
+    a owl:Ontology ;
+    rdfs:seeAlso <props.h> ,
+        <props.doap.ttl> ,
+        <../kx-meta/meta.ttl> ;
+    rdfs:comment "A set of custom LV2 properties created by and for KXStudio related projects." .
+
+props:NonAutomatable
+    a lv2:PortProperty ;
+    rdfs:label "non automatable" ;
+    rdfs:comment "Port should not be automated by the host." .
+
+props:TimePositionTicksPerBeat
+    a rdf:Property , owl:DatatypeProperty , opts:Option ;
+    rdfs:range xsd:float ;
+    rdfs:label "ticks per beat" ;
+    rdfs:comment "How many ticks are in a beat." .
+
+props:TransientWindowId
+    a rdf:Property , owl:DatatypeProperty , opts:Option ;
+    rdfs:label "transient window id" ;
+    rdfs:comment "A window id from the host to be set as transient hint by the plugin." .
