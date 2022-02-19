@@ -1,4 +1,5 @@
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix opts:  <http://lv2plug.in/ns/ext/options#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix props: <http://kxstudio.sf.net/ns/lv2ext/props#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -18,7 +19,7 @@ props:NonAutomatable
     rdfs:comment "Port should not be automated by the host." .
 
 props:TimePositionTicksPerBeat
-    a rdf:Property , owl:DatatypeProperty , opts:Option ;
+    a rdf:Property , owl:DatatypeProperty ;
     rdfs:range xsd:float ;
     rdfs:label "ticks per beat" ;
     rdfs:comment "How many ticks are in a beat." .
