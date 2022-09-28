@@ -1,4 +1,3 @@
-@prefix dcs:  <http://ontologi.es/doap-changeset#> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,23 +11,4 @@
     doap:created "2015-07-03" ;
     doap:shortdesc "LV2 extension that provides a realtime safe memory pool for plugins." ;
     doap:developer <https://falktx.com/> ;
-    doap:maintainer <https://falktx.com/> ;
-    doap:release [
-        doap:revision "2.0" ;
-        doap:created "2020-08-08" ;
-        doap:file-release <https://github.com/KXStudio/LV2-Extensions/archive/2020-08-08.tar.gz> ;
-        dcs:changeset [
-            dcs:item [
-                rdfs:label "Relicense as ISC."
-            ]
-        ]
-    ] , [
-        doap:revision "1.0" ;
-        doap:created "2015-07-03" ;
-        doap:file-release <https://github.com/KXStudio/LV2-Extensions/archive/2020-07-14.tar.gz> ;
-        dcs:changeset [
-            dcs:item [
-                rdfs:label "First stable release."
-            ]
-        ]
-    ] .
+    doap:maintainer <https://falktx.com/> .
