@@ -18,6 +18,12 @@ props:NonAutomatable
     rdfs:label "non automatable" ;
     rdfs:comment "Port should not be automated by the host." .
 
+props:Reset
+    a rdf:Property , owl:DatatypeProperty ;
+    rdfs:range xsd:float ;
+    rdfs:label "reset" ;
+    rdfs:comment "Reset an internal processing plugin state (filters, oscillators, envelopes, lfos, etc) and kill all voices." .
+
 props:TimePositionTicksPerBeat
     a rdf:Property , owl:DatatypeProperty ;
     rdfs:range xsd:float ;
