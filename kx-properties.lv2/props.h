@@ -1,6 +1,6 @@
 /*
   LV2 KXStudio Properties Extension
-  Copyright 2014-2024 Filipe Coelho <falktx@falktx.com>
+  Copyright 2014-2025 Filipe Coelho <falktx@falktx.com>
 
   Permission to use, copy, modify, and/or distribute this software for any
   purpose with or without fee is hereby granted, provided that the above
