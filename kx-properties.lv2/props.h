@@ -31,4 +31,11 @@
 #define LV2_KXSTUDIO_PROPERTIES__TimePositionTicksPerBeat LV2_KXSTUDIO_PROPERTIES_PREFIX "TimePositionTicksPerBeat"
 #define LV2_KXSTUDIO_PROPERTIES__TransientWindowId        LV2_KXSTUDIO_PROPERTIES_PREFIX "TransientWindowId"
 
+/** Possible values for LV2_KXSTUDIO_PROPERTIES__Reset. */
+typedef enum {
+  LV2_KXSTUDIO_PROPERTIES_RESET_NONE = 0,  /**< No reset. */
+  LV2_KXSTUDIO_PROPERTIES_RESET_FULL = 1,  /**< Full reset. */
+  LV2_KXSTUDIO_PROPERTIES_RESET_SOFT = 2   /**< Soft reset, e.g. reset filter state but do not clear audio buffers. */
+} LV2_KXStudio_Properties_Reset;
+
 #endif /* LV2_KXSTUDIO_PROPERTIES_H */
