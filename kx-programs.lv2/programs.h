@@ -1,6 +1,6 @@
 /*
   LV2 Programs Extension
-  Copyright 2012 Filipe Coelho <falktx@falktx.com>
+  Copyright 2012-2026 Filipe Coelho <falktx@falktx.com>
 
   Permission to use, copy, modify, and/or distribute this software for any
   purpose with or without fee is hereby granted, provided that the above
@@ -23,8 +23,13 @@
 #ifndef LV2_PROGRAMS_H
 #define LV2_PROGRAMS_H
 
+#if defined(__has_include) && __has_include("lv2/core/lv2.h")
+#include "lv2/core/lv2.h"
+#include "lv2/ui/ui.h"
+#else
 #include "lv2/lv2plug.in/ns/lv2core/lv2.h"
 #include "lv2/lv2plug.in/ns/extensions/ui/ui.h"
+#endif
 
 #define LV2_PROGRAMS_URI    "http://kxstudio.sf.net/ns/lv2ext/programs"
 #define LV2_PROGRAMS_PREFIX LV2_PROGRAMS_URI "#"

@@ -1,6 +1,6 @@
 /*
   LV2 External UI extension
-  Copyright 2020 Filipe Coelho <falktx@falktx.com>
+  Copyright 2020-2026 Filipe Coelho <falktx@falktx.com>
 
   Permission to use, copy, modify, and/or distribute this software for any
   purpose with or without fee is hereby granted, provided that the above
@@ -23,7 +23,11 @@
 #ifndef LV2_EXTERNAL_UI_H
 #define LV2_EXTERNAL_UI_H
 
+#if defined(__has_include) && __has_include("lv2/ui/ui.h")
+#include "lv2/ui/ui.h"
+#else
 #include "lv2/lv2plug.in/ns/extensions/ui/ui.h"
+#endif
 
 #define LV2_EXTERNAL_UI_URI     "http://kxstudio.sf.net/ns/lv2ext/external-ui"
 #define LV2_EXTERNAL_UI_PREFIX  LV2_EXTERNAL_UI_URI "#"
